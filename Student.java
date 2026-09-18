@@ -1,12 +1,16 @@
 class Student {
+    int id;
     String name;
     int completedCredits;
 
-    void rename(String name) {
-        this.name = name;
+    void addCredits(int amount) {
+        completedCredits += amount;
     }
 
-    void addCredits(int amount) {
-        this.completedCredits += amount;
+    void printStudent() {
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Credits: " + completedCredits);
+        System.out.println();
     }
 }
